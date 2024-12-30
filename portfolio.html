@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revathi Koppula - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: #2c3e50;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-content h1 {
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        .hero {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .education-item, .project-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .education-item h3, .project-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .hero {
+                padding: 2rem 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1>Revathi Koppula</h1>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#achievements">Achievements</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero" id="about">
+            <h1>Revathi Koppula</h1>
+            <p>Computer Science Engineering Student passionate about technology and innovation</p>
+            <div class="contact-info">
+                <a href="mailto:21jr1a0580@gmail.com">21jr1a0580@gmail.com</a>
+                <a href="tel:+919014755429">+91 9014755429</a>
+                <a href="https://www.linkedin.com/in/koppula-revathi-68512b257/" target="_blank">https://www.linkedin.com/in/koppula-revathi-68512b257</a>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Technology in Computer Science</h3>
+                <p>KKR & KSR Institute of Technology and Sciences (2021 – 2025)</p>
+                <p>CGPA: 8.68</p>
+            </div>
+            <div class="education-item">
+                <h3>Intermediate in MPC</h3>
+                <p>Vikas Junior College, Vissanapeta, AP (2019 – 2021)</p>
+                <p>Percentage: 95</p>
+            </div>
+            <div class="education-item">
+                <h3>SSC</h3>
+                <p>Sreshta High School, Guntur, AP (2019)</p>
+                <p>GPA: 9.8</p>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Sales Dashboard</h3>
+                <p><strong>Technology Used:</strong> Power BI, SQL</p>
+                <p>Designed an interactive dashboard to visualize sales data. Analyzed trends, created KPIs, and generated insights for better decision-making by connecting Power BI with a SQL database.</p>
+                <p><strong>Role:</strong> Data Analyst and Dashboard Designer</p>
+            </div>
+            <div class="project-item">
+                <h3>Somni Alert</h3>
+                <p><strong>Technology Used:</strong> IoT, Arduino Software</p>
+                <p>Designed a device to detect sleepwalking using sensors like accelerometers and heart rate monitors, alerting users via an alarm system.</p>
+                <p><strong>Role:</strong> Team Leader</p>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul class="skill-list">
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skill-list">
+                        <li>Power BI</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="achievements">
+            <h2>Achievements & Certifications</h2>
+            <div class="education-item">
+                <h3>Certifications</h3>
+                <ul class="skill-list">
+                    <li>Java Programming (NPTEL)</li>
+                    <li>Database Management Systems (DBMS) (NPTEL)</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <h3>Achievements</h3>
+                <ul class="skill-list">
+                    <li>IIC Regional Meet: Showcased innovative projects at the Project Expo</li>
+                    <li>Accenture Innovation Challenge: Contributed to a recognized project</li>
+                    <li>MSME Selection: Advanced to the second round of the MSME competition</li>
+                    <li>TCS NQT: Successfully qualified, demonstrating technical competence</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
